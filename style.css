@@ -7,6 +7,7 @@
   /* Primary */
   --pale-blue: hsl(225, 100%, 94%);
   --bright-blue: hsl(245, 75%, 52%);
+  --hover-blue: hsl(247, 61%, 60%);
   --white: hsl(0, 0%, 100%);
   /* Neutral*/
 
@@ -44,6 +45,10 @@ h3 {
   font-weight: var(--w-black);
   color: var(--dark-blue);
   text-align: center;
+  width: 100%;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 1.25rem;
 }
 
 p {
@@ -82,22 +87,36 @@ p {
 .details {
   display: inline-flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 354px;
+  padding: 1.5rem;
+  width: 306px;
+  height: 48px;
   background-color: var(--very-pale-blue);
   border-radius: 1rem;
 }
 
 .details .icon {
   background: url(./images/icon-music.svg);
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
 }
 
 .details > a {
   font-weight: var(--w-bold);
 }
 
+.details > a:hover {
+  color: var(--hover-blue);
+  text-decoration: none;
+}
+
+.price {
+  margin: 0 5rem 0 1.25rem;
+  width: 90px;
+}
+.price > p {
+  font-size: 1.25rem;
+  margin: 1rem 0 0 0;
+}
 button {
   border: none;
   height: 50px;
@@ -108,11 +127,20 @@ button {
   margin-top: 2rem;
 }
 
+button:hover {
+  background-color: var(--hover-blue);
+  cursor: pointer;
+}
+
 .cancel-link {
   color: var(--desaturated-blue);
   font-weight: var(--w-bold);
   text-decoration: none;
   margin-top: 2.25rem;
+}
+
+.cancel-link:hover {
+  color: var(--dark-blue);
 }
 
 .attribution {
