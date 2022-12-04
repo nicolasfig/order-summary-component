@@ -20,6 +20,10 @@
   --w-bold: 700;
   --w-black: 900;
 }
+
+body {
+  font-family: var(--red-hat);
+}
 main {
   height: 100vh;
   display: flex;
@@ -28,6 +32,25 @@ main {
   background-image: url(./images//pattern-background-desktop.svg);
   background-repeat: no-repeat;
   background-color: var(--pale-blue);
+}
+
+h1 {
+  font-weight: var(--w-black);
+  color: var(--dark-blue);
+  margin: 0;
+}
+
+h3 {
+  font-weight: var(--w-black);
+  color: var(--dark-blue);
+  text-align: center;
+}
+
+p {
+  font-weight: var(--w-medium);
+  color: var(--desaturated-blue);
+  font-size: 1rem;
+  text-align: center;
 }
 
 .card {
@@ -49,18 +72,47 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 2rem 5rem 3.25rem 5rem;
 }
-
-.info .details {
-  display: flex;
+.info-text {
+  margin: 2rem 0 3rem 0;
+  line-height: 1.5rem;
+  width: 300px;
+}
+.details {
+  display: inline-flex;
   align-items: center;
   justify-content: space-evenly;
+  width: 354px;
+  background-color: var(--very-pale-blue);
+  border-radius: 1rem;
 }
 
 .details .icon {
   background: url(./images/icon-music.svg);
   width: 50px;
   height: 50px;
+}
+
+.details > a {
+  font-weight: var(--w-bold);
+}
+
+button {
+  border: none;
+  height: 50px;
+  width: 354px;
+  background-color: var(--bright-blue);
+  color: var(--white);
+  border-radius: 0.75rem;
+  margin-top: 2rem;
+}
+
+.cancel-link {
+  color: var(--desaturated-blue);
+  font-weight: var(--w-bold);
+  text-decoration: none;
+  margin-top: 2.25rem;
 }
 
 .attribution {
