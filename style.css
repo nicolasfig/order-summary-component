@@ -80,7 +80,7 @@ p {
   margin: 2rem 5rem 3.25rem 5rem;
 }
 .info-text {
-  margin: 2rem 0 3rem 0;
+  margin: 2rem 0 2rem 0;
   line-height: 1.5rem;
   width: 300px;
 }
@@ -119,12 +119,13 @@ p {
 }
 button {
   border: none;
-  height: 50px;
+  height: 48px;
   width: 354px;
   background-color: var(--bright-blue);
   color: var(--white);
   border-radius: 0.75rem;
   margin-top: 2rem;
+  box-shadow: 0px 16px 32px -5px hsla(224, 23%, 55%, 0.5);
 }
 
 button:hover {
@@ -136,7 +137,7 @@ button:hover {
   color: var(--desaturated-blue);
   font-weight: var(--w-bold);
   text-decoration: none;
-  margin-top: 2.25rem;
+  margin-top: 2rem;
 }
 
 .cancel-link:hover {
