@@ -144,6 +144,62 @@ button:hover {
   color: var(--dark-blue);
 }
 
+@media screen and (max-width: 900px) {
+  main {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+  .card {
+    width: 327px;
+    height: 568px;
+  }
+
+  .header-image {
+    max-width: 100%;
+    max-height: 160px;
+    object-fit: contain;
+    background-size: 100% 160px;
+  }
+
+  .info {
+    margin: 2rem 1.5rem 2rem 1.5rem;
+  }
+  .info > h1 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+  .info-text {
+    margin: 1.5rem 0;
+    width: 278px;
+  }
+
+  .details {
+    width: 246px;
+    height: 48px;
+    padding: 1rem 1rem;
+  }
+  .price {
+    width: 80px;
+    margin: 0 40px 0 20px;
+  }
+
+  .price > p {
+    margin-top: 10px;
+  }
+
+  .details > a {
+    width: 46px;
+  }
+
+  button {
+    width: 278px;
+    margin-top: 1.5rem;
+  }
+
+  .cancel-link {
+    margin-top: 1.75rem;
+  }
+}
+
 .attribution {
   position: absolute;
   font-size: 11px;
